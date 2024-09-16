@@ -1,0 +1,11 @@
+{
+  "name": "vctr-posthog-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Aleksandr Meshcheriakov @ Vectary <meshcheriakov@vectary.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.6.2",
+  "dependencies": {
+    "posthog-js": "^1.161.5"
+  }
+}

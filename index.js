@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 		const testFlag = posthog.getFeatureFlag("vctr-posthog-test");
 		console.log({ testFlag });
 		testEls.forEach((el) => {
+			el.addEventListener("click", () => {
+				posthog.capture("click_cta");
+			});
+
 			// @ts-ignore
 			el.style.setProperty("display", "none");
 			if (el.getAttribute("js-ab-test") === testFlag) {
